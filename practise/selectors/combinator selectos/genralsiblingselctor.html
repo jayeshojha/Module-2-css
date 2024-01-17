@@ -7,23 +7,25 @@
         .container{
             height: 450px;
             width: 200px;
-            background-color: blanchedalmond;
             margin: 0 auto;
          }
-         .container p{
+         /* .container p{
             /* background-color: antiquewhite; */
-         }
-        .parent~p{
+         /* } */ 
+        /* .parent~p{
            background-color:bisque;
            color: black;
-        }
-        .child~p{
+        } */
+        /* .child~p{
             background-color: aquamarine;
             color: rgba(0, 0, 0, 0.838);
         }
         h1~p{
                background-color: aqua;
                color: aliceblue;
+        } */
+        .child~p{
+           background-color: aquamarine;
         }
     </style>
     <title>Document</title>
@@ -34,7 +36,13 @@
             <h1>this is heading</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quidem!</p>
     </div>
     <div class="child">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>

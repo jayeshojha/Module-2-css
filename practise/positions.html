@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        margin: 0 auto;
+        border: 1px solid black;
+        background-color: blue;
+        width: 500px;
+        position: relative;
+    }
+    div [class*="box"]{
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+    }
+    .box-1{
+     position: sticky;
+     position: absolute;
+     top: 0;
+     background-color: blueviolet !important;
+    }
+    .box-2{
+       position: fixed; 
+       position: absolute;
+       top: 150px;
+       left: 230px;
+       background-color: greenyellow !important;
+    }
+    .box-3{
+        
+    }
+    .box-4{
+        
+    }
+    .box-5{
+        
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+    </div>
+    <div class="container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+    </div>
+    <div class="container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+    </div>
+    <div class="container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+    </div>
+</body>
+</html>
