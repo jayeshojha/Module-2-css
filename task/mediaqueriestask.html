@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      div[class*="box"]{
+        height: 200px;
+        width:  236px;
+        background-color: crimson;
+        border: 1px solid aquamarine;
+        box-shadow: 8px 8px 15px;
+      }
+      body{
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+      }
+      @media (max-width: 992px) {
+        body{
+            flex-wrap: wrap;
+        }
+        
+      }
+      @media (max-width: 768px) {
+        div[class*="box"]{
+          width: 256px;
+          height: 200px;
+      }
+      }
+      @media (max-width:576px) {
+        div[class*="box"]{
+          width: 400px;
+          height: 230px;
+      }
+      }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div class="box-4"></div>
+</body>
+</html>

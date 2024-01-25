@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            animation-name: animation-1;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            transition-property: all;
+            /* animation-delay:5s; */
+        }
+        @keyframes animation-1{
+           0%{
+               /* margin-left: 0px; */
+              background-color: aqua;
+           }
+            40%{
+                margin-top: 0px;
+               margin-left: 500px;
+               border-radius: 200px;  
+               background-color: crimson;
+               transform: rotatez(180deg);
+            }
+            60%{
+                margin-left: 500px;
+                margin-top: 300px;
+                border-radius: 0px;
+                background-color: blue;
+                transform: rotate(180deg);
+                
+            }
+            80%{
+                margin-left: 0px;
+                margin-top: 300px;
+                border-radius: 200px;
+                background-color: blueviolet;
+                transform: rotatez(180deg);
+            }
+            100%{
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
