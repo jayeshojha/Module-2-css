@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     justify-content: space-around;
+    /* border: 1px solid black; */
 }
-body{
+.main{
     position: relative;
 }
-
 .main-1 {
     display: flex;
     padding-left: 10px;
@@ -18,8 +18,8 @@ body{
     position: sticky;
     top: 0;
     background-color: #fff;
-    z-index: 1;
-
+    
+    
 }
 .box-1 {
     width: 10vw;
@@ -27,7 +27,7 @@ body{
     padding-top: 11px;
 }
 
-img {}
+
 
 .box-2 {
     height: 7vh;
@@ -35,7 +35,7 @@ img {}
     font-weight: 700;
     color: #29303e;
     padding-top: 11px;
-
+    z-index: 1;
 }
 
 .box-3 {
@@ -75,7 +75,7 @@ img {}
     font-size: small;
     font-weight: 700;
     color: #29303e;
-    padding-top: 7px;
+    padding-top: 8px;
 }
 
 .box-8 {
@@ -93,6 +93,7 @@ img {}
     flex-direction: column;
     align-items: center;
     font-weight: 700;
+    justify-content: space-evenly;
 }
 
 .box-10 {
@@ -104,6 +105,7 @@ img {}
     align-items: center;
     font-weight: 700;
     color: #29303e;
+    justify-content: space-evenly;
 }
 
 .box-11 {
@@ -115,6 +117,10 @@ img {}
     align-items: center;
     font-weight: 700;
     color: #29303e;
+
+}
+.icon{
+    padding-top: 10px;
 }
 
 .new {
@@ -210,11 +216,13 @@ img {}
 
 .fixed {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 140px;
-    background-color: #fff;
+    background-color: wheat;
     font-size: larger;
+    
+    
 
 }
 
@@ -235,7 +243,12 @@ li {
     padding-top: 40px;
 }
 
-.box-2:hover .fixed {
+.box-2:hover + .fixed {
+    display: block;
+    display: flex;
+    gap: 10px;
+}
+.fixed:hover{
     display: block;
     display: flex;
     gap: 10px;
@@ -246,3 +259,72 @@ li {
     padding-left: 20px;
     padding-right: 20px;
 }
+.check{
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+.box-13{
+    display: none;
+    position: fixed;
+    top: 130px;
+    font-size: large;
+    right: 0px;
+}
+.check-1{
+     background-color: black;
+     color: white;
+
+}
+
+@media (max-width:992px){
+    .main-1{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box-1{
+        display: flex;
+        align-items: center;
+    }
+    .box-2{
+       display: none;
+    }
+    .box-3{
+        display: none;
+    }
+    .box-4{
+        display: none;
+    }
+    .box-5{
+        display: none;
+    }
+    .box-6{
+        display: none;
+    }
+    .box-7{
+        display: none;
+    }
+    .box-8{
+       display: none; 
+    }
+    .box-9{
+       display: none; 
+    }
+    .box-10{
+       display: none; 
+    }
+    .box-11{
+       display: none; 
+    }
+    .check{
+         display: block;
+    }
+    .box-13{
+         
+    }
+    .check:checked + .box-13{
+        display: block;
+        
+    }
+ 
+ }
