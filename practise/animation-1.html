@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div[class*="box"]{
+            height: 150px;
+            width: 150px;
+        }
+        .box-1{
+            background-color: blue;
+            color: blue;
+            position: absolute;
+            right: 0px;
+            animation-name: box-1;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        
+        }
+        .box-2{
+            background-color: crimson;
+            color: crimson;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation-name: box-2;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        .box-3{
+            background-color: rebeccapurple;
+            color: rebeccapurple;
+            position: absolute;
+            top: 250px;
+            left: 550px;
+            animation-name: box-3;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .box-4{
+            background-color: #227c;
+            color: #227c;
+            position: absolute;
+            bottom: 0px;
+            animation-name: box-4;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+           
+        }
+        .box-5{
+            background-color: rgba(255, 153, 0, 0.788);
+            color: rgba(255, 153, 0, 0.788);
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            animation-name: box-5;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        body{
+            animation: animation-1;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes animation-1 {
+            0%{
+               background-color: black;
+            }
+            20%{
+               background-blend-mode: hard-light;
+            }
+            60%{
+              background-blend-mode: exclusion;
+            }
+            90%{
+               background-color: rgb(0, 67, 0);
+            }
+        }
+        @keyframes box-1 {
+            0%{
+              
+            }
+            20%{
+              
+            }
+         
+            90%{
+             
+               border-radius: 50%;
+               margin-top: 450px;
+               margin-right: 1110px;
+               
+            }
+        }
+        @keyframes box-4 {
+            0%{
+              
+            }
+            20%{
+            
+            
+            }
+            90%{
+            
+               border-radius: 50%;
+            margin-bottom: 450px;
+            margin-left: 1110px;
+            }
+        }
+        @keyframes box-2 {
+           0%{
+            
+           }
+           20%{
+              
+           }
+           90%{
+            border-radius: 50%;
+            margin-top: 450px;
+            margin-left: 1110px;
+           }
+        }
+        @keyframes box-3 {
+           0%{
+            
+           }
+           20%{
+              
+           }
+           50%{
+            transform: rotate(180deg);
+            border-radius: 50%;
+           }
+           90%{
+             transform: rotateX(180deg);
+              border-radius: 25%;
+           }
+        }
+        @keyframes box-5 {
+           0%{
+            
+           }
+           20%{
+              
+           }
+           90%{
+            border-radius: 50%;
+            margin-bottom: 450px;
+            margin-right: 1110px;
+           }
+        }
+        div:hover{
+            background-color: black;
+           color: rgba(255, 153, 0, 0.788);
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box-1">Jai Shree ram</div>
+    <div class="box-2">Jai Shree ram</div>
+    <div class="box-3">Jai Shree ram</div>
+    <div class="box-4">Jai Shree ram</div>
+    <div class="box-5">Jai Shree ram</div>
+</body>
+</html>

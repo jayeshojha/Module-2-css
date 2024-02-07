@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: linear-gradient(#edf4f2,#7c8363,#31473a);
+    animation: jaddu-2 8s ease-in-out infinite;
+}
+.container{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     width: 90%;
+     height: 560px;
+     justify-content: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+div [class*="box"]{
+   min-height: 20vh;
+   border: 1px solid green;
+   filter: brightness(80%);
+   border-radius: 5px;
+}
+.box-1{
+  background-image: url("3fb2faef22c3fc7a8185c06cac0d7d9a.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+.box-2{
+    background-image: url("500px-landscape-photography-wallpaper-preview.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  grid-column: 2/4;
+}
+.box-3{
+    background-image: url("500px-nature-photography-wallpaper-preview.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+.box-4{
+    background-image: url("20484-1500x1000.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+.box-5{
+    background-image: url("19083819ee564d042e86087be2bd737f.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+.box-6{
+    background-image: url("istockphoto-517188688-612x612.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  grid-row: 3/5;
+}
+.box-7{
+    background-image: url("landscape-nature-sunset-500px-wallpaper-preview.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+.box-8{
+    background-image: url("avenue-815297_640.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  grid-column: 2/4;
+}
+.magic:hover{
+  cursor: pointer;
+  box-shadow: 1px 1px 50px lightgoldenrodyellow;
+  background-position: center;
+  filter: brightness(120%);
+  animation: jaddu 1s ease-in-out 1;
+}
+@keyframes jaddu {
+  from{
+    background-position: bottom;
+    filter: brightness(80%);
+  }
+  to{
+    background-position: center;
+    filter: brightness(120%);
+  }
+}
+@keyframes jaddu-2 {
+  0%{
+   background-blend-mode: color-dodge;
+  }
+  20%{
+    background-blend-mode: darken;
+  }
+  40%{
+    background-blend-mode: lighten;
+  }
+  60%{
+    background-blend-mode: luminosity;
+  }
+  80%{
+    background-blend-mode: color-burn;
+  }
+  100%{
+    background-blend-mode: exclusion;
+  }
+}

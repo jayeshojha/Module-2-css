@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container{
-            height: 450px;
-            width: 200px;
+            /* height: 450px;
+            width: 200px; */
             margin: 0 auto;
          }
          /* .container p{
@@ -26,6 +26,10 @@
         } */
         .child~p{
            background-color: aquamarine;
+        }
+        .container-1 ~div{
+            background-color: blue;
+            border: 1px solid black;
         }
     </style>
     <title>Document</title>
@@ -49,6 +53,20 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia!</p>
     </div>
+    </div>
+    <div class="container-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
 </body>
 </html>
